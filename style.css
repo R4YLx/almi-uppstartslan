@@ -7,8 +7,12 @@
 2.Typography
 
 3.Layout
+	3.1.Offer section 
+	3.2.Slideshow/ Carousel 
 
 4.Buttons
+
+5.Images & icons
 
 //*/
 
@@ -20,26 +24,155 @@
 	--primary-color: #ff5e0a;
 	--secondary-color: #ffbe9b;
 	--optional-color-1: #ffcd32;
+	--optional-color-2: #a0aaff;
 	--text-color-1: #0000;
 	--text-color-2: #ffff;
 }
 
-/*/////////////////////////
+/*///////////////////
 //  2.Typography  //
-///////////////////////*/
+/////////////////*/
 
 * {
 	font-family: "Sofia Pro", sans-serif;
 }
 
-/*/ ////////////////////////
-//  4.Buttons  //
-///////////////////////*/
-.button {
+h1 {
+	font-size: 2rem !important;
+	font-weight: bold !important;
+	color: var(--text-color-2);
+	text-shadow: 2px 2px 4px #000000;
+}
+
+h2 {
+	color: var(--primary-color);
+	font-size: 1.4rem !important;
+	font-weight: bold !important;
+}
+
+ul {
+	padding-left: 0 !important;
+}
+
+li {
+	font-size: 1.1rem;
+	color: var(--text-color-2);
+	text-shadow: 2px 2px 4px #000000;
+	list-style: inside;
+}
+
+/* Styling of buttons can be found under 4.Buttons */
+button {
+	font-weight: bold;
+	font-size: 1.2rem;
+	text-align: center;
+}
+
+p {
+	font-size: 1.1rem;
+}
+
+.steps {
+	color: var(--primary-color);
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+h3 {
+	color: var(--primary-bg-color);
+	text-transform: uppercase;
+	font-weight: bold !important;
+	font-size: 1.6rem !important;
+}
+
+.sumSek,
+.month,
+.interest {
+	color: var(--primary-bg-color);
+	font-size: 1.4rem !important;
+	font-weight: bold !important;
+}
+
+.amo {
+	color: var(--primary-bg-color);
+	font-size: 1rem !important;
+}
+
+/*/////////////////
+//  3.Layout    //
+///////////////*/
+
+header {
+	background-color: var(--primary-bg-color);
+}
+
+.hero {
+	position: relative;
+}
+
+.heroTextbox {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -55%);
+	width: 100%;
+}
+
+
+/*/ /////////////////////////
+//  3.1.Offer section    //
+////////////////////////*/
+.offers {
+	background-color: var(--secondary-color);
+}
+
+.offerbox {
+	background-color: var(--text-color-2);
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px rgb(110, 110, 110);
+}
+
+/*/ /////////////////////////////
+//  3.2.Slideshow/ Carousel   //
+/////////////////////////////*/
+
+/* text description in slideshow */
+.carousel-caption {
+	top: 60% !important;
+}
+
+/* cake icon/ indicator for slideshow */
+.stepIndicator {
+	position: absolute !important;
+	max-width: 15%;
+	top: 15px;
+	left: 10px;
+}
+
+/*/ ///////////////
+//  4.Buttons   //
+///////////////*/
+
+button {
 	background-color: var(--primary-color);
 	color: var(--text-color-2);
 	border: none;
-	text-align: center;
 	text-decoration: none;
 	display: inline-block;
+	padding: 5px 10px 5px 10px;
+}
+
+/*/ //////////////////////
+//  5.Images & icons   //
+//////////////////////*/
+
+header img {
+	max-width: 100px;
+}
+
+.heroImg {
+	object-fit: cover !important;
+	max-height: 70vh;
+	width: 100%;
+	filter: brightness(70%);
 }

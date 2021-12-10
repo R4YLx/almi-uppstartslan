@@ -22,20 +22,28 @@
 		<title>Almi - Uppstartslån</title>
 	</head>
 	<body>
-		<header>LOGO</header>
-		<section class="hero">
-			<div class="heroImg"></div>
-			<div class="textbox text-center">
+		<header class="d-flex flex-wrap justify-content-center">
+			<img
+				src="assets/logos/almi-white-logo.svg"
+				alt="Almi logo"
+				class="mx-4"
+				href="#"
+			/>
+		</header>
+		<section class="hero text-center">
+			<img src="assets/images/coffee.jpg" alt="barista" class="heroImg" />
+
+			<div class="heroTextbox my-2 px-4">
 				<h1>Uppstartslån</h1>
-				<ul>
+				<ul class="">
 					<li>Flexibel återbetalning</li>
 					<li>5% fast ränta</li>
 					<li>Personlig kontakt</li>
 				</ul>
-				<button class="button">Boka möte</button>
+				<button>Boka möte</button>
 			</div>
 		</section>
-		<section class="start">
+		<section class="start my-4 px-4">
 			<article class="container">
 				<h2>Så här kommer du igång</h2>
 				<p>
@@ -51,10 +59,97 @@
 					ut aliquam purus sit amet luctus venenatis. Consequat nisl vel pretium
 					lectus quam.
 				</p>
-				<div class="slideshow"></div>
+
+				<div
+					id="carouselSlideshow"
+					class="carousel slide py-2"
+					data-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img
+								src="assets/graphics/cake-1.svg"
+								alt="cake"
+								class="stepIndicator"
+							/>
+							<img
+								class="d-block w-100"
+								src="assets/images/slide-1.jpg"
+								alt="First slide"
+							/>
+							<div class="carousel-caption">
+								<h4 class="steps">1. Skicka din ansökan</h4>
+							</div>
+						</div>
+						<a
+							class="carousel-control-prev"
+							href="#carouselSlideshow"
+							role="button"
+							data-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+						</a>
+						<a
+							class="carousel-control-next"
+							href="#carouselSlideshow"
+							role="button"
+							data-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+						</a>
+					</div>
+				</div>
 			</article>
 		</section>
-		<section class="offers"></section>
+		<section class="offers py-2">
+			<div class="sectionContent container px-4">
+				<div class="offerTitle text-center pt-4">
+					<h2>Lån för olika behov</h2>
+				</div>
+				<div class="offerSmall offerbox container text-center py-2 my-4">
+					<h3 class="my-2">Small</h3>
+					<div class="offerInfo my-4">
+						<p class="sumSek m-0">10 000 SEK</p>
+						<p class="month m-0">3 mån</p>
+						<p class="interest m-0">5% fast ränta</p>
+					</div>
+					<button>Läs mer</button>
+					<p class="amo pt-4">
+						Amortering på en fast avgift av 500 SEK i månaden
+					</p>
+				</div>
+				<div class="offerMedium offerbox container text-center py-2 my-4">
+					<h3 class="my-2">Medium</h3>
+					<div class="offerInfo my-4">
+						<p class="sumSek">25 000 SEK</p>
+						<p class="month">6 mån</p>
+						<p class="interest">5% fast ränta</p>
+					</div>
+					<button>Läs mer</button>
+					<p class="amo pt-4">
+						Amortering på en fast avgift av 500 SEK i månaden
+					</p>
+				</div>
+				<div class="offerLarge offerbox container text-center py-2 my-4">
+					<h3 class="my-2">Large</h3>
+					<div class="offerInfo my-4">
+						<p class="sumSek m-0">50 000 SEK</p>
+						<p class="month m-0">12 mån</p>
+						<p class="interest m-0">5% fast ränta</p>
+					</div>
+					<button>Läs mer</button>
+					<p class="amo pt-4">
+						Amortering på en fast avgift av 500 SEK i månaden
+					</p>
+				</div>
+			</div>
+		</section>
 		<section class="socialProof"></section>
 		<section class="whyShould"></section>
 		<section class="end"></section>
