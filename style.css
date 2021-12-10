@@ -1,0 +1,45 @@
+/*// 
+
+------- INDEX -------
+
+1.Colors & general
+
+2.Typography
+
+3.Layout
+
+4.Buttons
+
+//*/
+
+/*/ ////////////////////////
+//  1.Colors & general  //
+///////////////////////*/
+:root {
+	--primary-bg-color: #291aff;
+	--primary-color: #ff5e0a;
+	--secondary-color: #ffbe9b;
+	--optional-color-1: #ffcd32;
+	--text-color-1: #0000;
+	--text-color-2: #ffff;
+}
+
+/*/////////////////////////
+//  2.Typography  //
+///////////////////////*/
+
+* {
+	font-family: "Sofia Pro", sans-serif;
+}
+
+/*/ ////////////////////////
+//  4.Buttons  //
+///////////////////////*/
+.button {
+	background-color: var(--primary-color);
+	color: var(--text-color-2);
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+}
