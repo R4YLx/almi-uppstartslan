@@ -1,24 +1,27 @@
-/*// 
-
+/*
 ------- INDEX -------
 
 1.Colors & general
 
+//
 2.Typography
 
+//
 3.Layout
-	3.1.Offer section 
-	3.2.Slideshow/ Carousel 
+	3.1.Hamburgermenu 
+	3.2.Slideshow/ Carousel
 
+//
 4.Buttons
 
+//
 5.Images & icons
 
-//*/
+*/
 
-/*/ ////////////////////////
-//  1.Colors & general  //
-///////////////////////*/
+/*/ /////////////
+//  1.Colors  //
+/////////////*/
 :root {
 	--primary-bg-color: #291aff;
 	--primary-color: #ff5e0a;
@@ -29,7 +32,7 @@
 	--text-color-2: #ffff;
 }
 
-/*///////////////////
+/*/ //////////////////
 //  2.Typography  //
 /////////////////*/
 
@@ -37,25 +40,32 @@
 	font-family: "Sofia Pro", sans-serif;
 }
 
-h1 {
-	font-size: 2rem !important;
-	font-weight: bold !important;
+h1,
+span {
+	font-size: 2rem;
+	font-weight: bold;
 	color: var(--text-color-2);
-	text-shadow: 2px 2px 4px #000000;
+	text-shadow: 2px 2px 8px #000000;
+	margin: 0;
+}
+
+.hero {
+	text-align: center;
 }
 
 h2 {
 	color: var(--primary-color);
-	font-size: 1.4rem !important;
-	font-weight: bold !important;
+	font-size: 1.5rem;
+	font-weight: bold;
 }
 
-ul {
-	padding-left: 0 !important;
+.heroList,
+.linkList {
+	padding-left: 0;
 }
 
-li {
-	font-size: 1.1rem;
+.heroText {
+	font-size: 1.125rem;
 	color: var(--text-color-2);
 	text-shadow: 2px 2px 4px #000000;
 	list-style: inside;
@@ -63,73 +73,221 @@ li {
 
 /* Styling of buttons can be found under 4.Buttons */
 button {
-	font-weight: bold;
-	font-size: 1.2rem;
+	font-weight: 600;
+	font-size: 1.25rem;
 	text-align: center;
 }
 
 p {
-	font-size: 1.1rem;
+	font-size: 1.125rem;
 }
 
-.steps {
+.article-container p {
+	margin: 0;
+}
+
+/* Layout of caption is under 3.2.Slideshow/ Carousel-section */
+.carousel-caption {
 	color: var(--primary-color);
 	font-size: 1.1rem;
 	font-weight: bold;
+	text-align: center;
+}
+
+.offers {
+	text-align: center;
 }
 
 h3 {
 	color: var(--primary-bg-color);
 	text-transform: uppercase;
-	font-weight: bold !important;
-	font-size: 1.6rem !important;
+	font-weight: 900;
+	font-size: 1.75rem;
+	margin: 1rem;
 }
 
 .sumSek,
 .month,
 .interest {
 	color: var(--primary-bg-color);
-	font-size: 1.4rem !important;
-	font-weight: bold !important;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin: 10px;
 }
 
 .amo {
 	color: var(--primary-bg-color);
-	font-size: 1rem !important;
+	font-size: 1rem;
+	margin: 0;
+}
+
+.whyShould p {
+	color: var(--text-color-2);
+}
+
+.end {
+	text-align: center;
+}
+
+span {
+	display: block;
+}
+
+h4 {
+	color: var(--text-color-2);
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0;
+}
+
+.linkbox {
+	font-size: 1.125rem;
+	color: var(--text-color-2);
+	list-style: inside;
+	text-align: center;
+}
+
+.linkList {
+	list-style-type: none;
+}
+
+.linkList li a {
+	text-decoration: none;
+	color: var(--text-color-2);
+	font-size: 1.125rem;
+	font-weight: 400;
 }
 
 /*/////////////////
 //  3.Layout    //
 ///////////////*/
 
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
 header {
 	background-color: var(--primary-bg-color);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 .hero {
 	position: relative;
 }
 
-.heroTextbox {
+.heroTextbox,
+.endText {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -55%);
 	width: 100%;
+	padding: 10vw;
 }
 
+.start {
+	padding: 0vw 10vw 10vw 10vw;
+}
 
-/*/ /////////////////////////
-//  3.1.Offer section    //
-////////////////////////*/
+.slidebox {
+	position: relative;
+}
+
+.slideshow-container {
+	position: relative;
+}
+
 .offers {
 	background-color: var(--secondary-color);
+	padding: 10vw;
 }
 
 .offerbox {
 	background-color: var(--text-color-2);
 	border-radius: 10px;
 	box-shadow: 5px 5px 5px rgb(110, 110, 110);
+	margin: 10vw 0vw 10vw 0vw;
+	padding: 5vw;
+}
+
+.article-container article {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.socialProof {
+	position: relative;
+	padding: 10vw;
+}
+
+.whyShould {
+	background-color: var(--secondary-color);
+	padding: 10vw;
+}
+
+.end {
+	position: relative;
+}
+
+.linksSection {
+	background-color: var(--primary-bg-color);
+	position: relative;
+	z-index: 1;
+	padding: 10vw;
+}
+
+/*/ ///////////////////////
+//  3.1.Hamburgermenu   //
+///////////////////////*/
+
+nav {
+	overflow: hidden;
+	background-color: var(--primary-bg-color);
+}
+
+#menu {
+	display: none;
+	position: fixed;
+	background-color: var(--primary-bg-color);
+	transform: translateY(0);
+	transition: transform 0.5s;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	padding-top: 4rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: var(--text-color-2);
+	display: block;
+	font-weight: 400;
+	padding: 10px;
+	text-align: center;
+}
+
+.burgerBars {
+	color: var(--optional-color-2);
+	font-size: 2rem;
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+	z-index: 100;
+}
+
+.showMenu {
+	transform: translateY(-100%);
 }
 
 /*/ /////////////////////////////
@@ -138,15 +296,71 @@ header {
 
 /* text description in slideshow */
 .carousel-caption {
-	top: 60% !important;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 100%;
 }
 
 /* cake icon/ indicator for slideshow */
 .stepIndicator {
-	position: absolute !important;
+	position: absolute;
 	max-width: 15%;
-	top: 15px;
-	left: 10px;
+	top: 10px;
+	left: 8px;
+}
+
+/* Next and previous buttons/arrows */
+.nextBtn,
+.prevBtn {
+	cursor: pointer;
+	position: absolute;
+	font-size: 2rem;
+	top: 50%;
+	margin-top: -10%;
+	width: auto;
+	padding: 2vw;
+	text-decoration: none;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	color: var(--text-color-2);
+}
+
+.nextBtn {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prevBtn:hover,
+.nextBtn:hover {
+	background-color: rgba(0, 0, 0, 0.644);
+}
+
+/* Fading animation */
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 /*/ ///////////////
@@ -159,20 +373,64 @@ button {
 	border: none;
 	text-decoration: none;
 	display: inline-block;
-	padding: 5px 10px 5px 10px;
+	padding: 5px 15px 5px 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	cursor: pointer;
 }
 
 /*/ //////////////////////
 //  5.Images & icons   //
 //////////////////////*/
 
+img {
+	width: 100%;
+}
+
 header img {
 	max-width: 100px;
 }
 
-.heroImg {
-	object-fit: cover !important;
-	max-height: 70vh;
+.heroImg,
+.endImg {
+	object-fit: cover;
+	max-height: 50vh;
+	filter: brightness(60%);
+}
+
+.slideshow img {
 	width: 100%;
-	filter: brightness(70%);
+	object-fit: cover;
+}
+
+.elementOrange {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.articleImg {
+}
+
+.winnerImg,
+.teamImg {
+	object-fit: cover;
+}
+
+.elementWhite {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	z-index: -1;
+	max-width: 35vw;
+}
+
+.socials {
+	text-align: center;
+}
+
+.socialsIcons {
+	max-width: 60px;
+	padding: 10px;
 }

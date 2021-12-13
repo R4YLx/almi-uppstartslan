@@ -8,43 +8,48 @@
 		<!-- CSS Stylesheet -->
 		<link rel="stylesheet" href="style.css" />
 
-		<!-- Bootstrap style -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-			crossorigin="anonymous"
-		/>
-
 		<!-- Font -->
 		<link href="http://fonts.cdnfonts.com/css/sofia-pro" rel="stylesheet" />
 
 		<title>Almi - Uppstartslån</title>
 	</head>
 	<body>
-		<header class="d-flex flex-wrap justify-content-center">
+		<header>
+			<nav>
+				<div id="menu">
+					<a href="https://www.almi.se/vara-tjanster/tjanster/" class="menuItem"
+						>Våra tjänster</a
+					>
+					<a href="https://www.almi.se/kunskapsbanken/" class="menuItem"
+						>Kunskap & inspiration</a
+					>
+					<a href="https://www.almi.se/om-almi/" class="menuItem">Om Almi</a>
+				</div>
+				<i class="fa fa-bars burgerBars"></i>
+			</nav>
 			<img
 				src="assets/logos/almi-white-logo.svg"
 				alt="Almi logo"
-				class="mx-4"
-				href="#"
+				href="https://www.almi.se/"
 			/>
 		</header>
-		<section class="hero text-center">
+		<section class="hero">
 			<img src="assets/images/coffee.jpg" alt="barista" class="heroImg" />
 
-			<div class="heroTextbox my-2 px-4">
+			<div class="heroTextbox">
 				<h1>Uppstartslån</h1>
-				<ul class="">
-					<li>Flexibel återbetalning</li>
-					<li>5% fast ränta</li>
-					<li>Personlig kontakt</li>
+				<ul class="heroList">
+					<li class="heroText">Flexibel återbetalning</li>
+					<li class="heroText">5% fast ränta</li>
+					<li class="heroText">Personlig kontakt</li>
 				</ul>
-				<button>Boka möte</button>
+				<a href="https://etjanster.almi.se/oversikt/overview/345"
+					><button type="button">Boka möte</button></a
+				>
 			</div>
 		</section>
-		<section class="start my-4 px-4">
-			<article class="container">
+		<section class="start">
+			<article>
 				<h2>Så här kommer du igång</h2>
 				<p>
 					Massa placerat duis ultricies lacus sed turpis. Mauris sit amet massa
@@ -60,109 +65,230 @@
 					lectus quam.
 				</p>
 
-				<div
-					id="carouselSlideshow"
-					class="carousel slide py-2"
-					data-ride="carousel"
-				>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img
-								src="assets/graphics/cake-1.svg"
-								alt="cake"
+				<div class="slideshow-container">
+					<div class="slidebox">
+						<div class="slide fade">
+							<!-- <img
 								class="stepIndicator"
+								src="assets/graphics/cake-1.svg"
+								alt="indicator"
 							/>
-							<img
-								class="d-block w-100"
-								src="assets/images/slide-1.jpg"
-								alt="First slide"
-							/>
-							<div class="carousel-caption">
-								<h4 class="steps">1. Skicka din ansökan</h4>
-							</div>
+							<img src="assets/images/slide-1.jpg" class="slideshowImg" />
+							<p class="carousel-caption">1. Skicka in din låneansökan</p> -->
 						</div>
-						<a
-							class="carousel-control-prev"
-							href="#carouselSlideshow"
-							role="button"
-							data-slide="prev"
-						>
-							<span
-								class="carousel-control-prev-icon"
-								aria-hidden="true"
-							></span>
-						</a>
-						<a
-							class="carousel-control-next"
-							href="#carouselSlideshow"
-							role="button"
-							data-slide="next"
-						>
-							<span
-								class="carousel-control-next-icon"
-								aria-hidden="true"
-							></span>
-						</a>
+						<!-- Next and previous buttons -->
+						<div class="arrowBtn">
+							<a class="prevBtn">&#10094;</a>
+							<a class="nextBtn">&#10095;</a>
+						</div>
 					</div>
 				</div>
 			</article>
 		</section>
-		<section class="offers py-2">
-			<div class="sectionContent container px-4">
-				<div class="offerTitle text-center pt-4">
-					<h2>Lån för olika behov</h2>
+		<section class="offers">
+			<div class="offerTitle">
+				<h2>Lån för olika behov</h2>
+			</div>
+			<div class="offerSmall offerbox">
+				<h3>Small</h3>
+				<div class="offerInfo">
+					<p class="sumSek">10 000 SEK</p>
+					<p class="month">3 mån</p>
+					<p class="interest">5% fast ränta</p>
 				</div>
-				<div class="offerSmall offerbox container text-center py-2 my-4">
-					<h3 class="my-2">Small</h3>
-					<div class="offerInfo my-4">
-						<p class="sumSek m-0">10 000 SEK</p>
-						<p class="month m-0">3 mån</p>
-						<p class="interest m-0">5% fast ränta</p>
-					</div>
-					<button>Läs mer</button>
-					<p class="amo pt-4">
-						Amortering på en fast avgift av 500 SEK i månaden
-					</p>
+				<button type="button">Läs mer</button>
+				<p class="amo">Amortering på en fast avgift av 500 SEK i månaden</p>
+			</div>
+			<div class="offerMedium offerbox">
+				<h3>Medium</h3>
+				<div class="offerInfo">
+					<p class="sumSek">25 000 SEK</p>
+					<p class="month">6 mån</p>
+					<p class="interest">5% fast ränta</p>
 				</div>
-				<div class="offerMedium offerbox container text-center py-2 my-4">
-					<h3 class="my-2">Medium</h3>
-					<div class="offerInfo my-4">
-						<p class="sumSek">25 000 SEK</p>
-						<p class="month">6 mån</p>
-						<p class="interest">5% fast ränta</p>
-					</div>
-					<button>Läs mer</button>
-					<p class="amo pt-4">
-						Amortering på en fast avgift av 500 SEK i månaden
-					</p>
+				<button type="button">Läs mer</button>
+				<p class="amo">Amortering på en fast avgift av 500 SEK i månaden</p>
+			</div>
+			<div class="offerLarge offerbox">
+				<h3>Large</h3>
+				<div class="offerInfo">
+					<p class="sumSek">50 000 SEK</p>
+					<p class="month">12 mån</p>
+					<p class="interest">5% fast ränta</p>
 				</div>
-				<div class="offerLarge offerbox container text-center py-2 my-4">
-					<h3 class="my-2">Large</h3>
-					<div class="offerInfo my-4">
-						<p class="sumSek m-0">50 000 SEK</p>
-						<p class="month m-0">12 mån</p>
-						<p class="interest m-0">5% fast ränta</p>
-					</div>
-					<button>Läs mer</button>
-					<p class="amo pt-4">
-						Amortering på en fast avgift av 500 SEK i månaden
-					</p>
-				</div>
+				<button type="button">Läs mer</button>
+				<p class="amo">Amortering på en fast avgift av 500 SEK i månaden</p>
 			</div>
 		</section>
-		<section class="socialProof"></section>
-		<section class="whyShould"></section>
-		<section class="end"></section>
+		<section class="socialProof">
+			<img
+				src="assets/graphics/light-orange-circle.svg"
+				alt=""
+				class="gElement elementOrange"
+			/>
+			<div class="article-container">
+				<article>
+					<div class="articleImg">
+						<img
+							src="assets/images/career.jpg"
+							alt="Work team"
+							class="teamImg"
+						/>
+					</div>
+					<h2>Karriärföretag 2022</h2>
+					<p>
+						Almi blir utsedda till ett av Sveriges Karriärföretag 2022. Vi är
+						väldigt stolta över att återigen vara utvalda till ett
+						Karriärföretag 2022.
+					</p>
+					<a href="https://www.almi.se/nyheter/nationella/karriarsforetag-2022/"
+						><button type="button">Läs mer</button></a
+					>
+				</article>
+				<article>
+					<div class="articleImg">
+						<img
+							src="assets/images/winner.jpg"
+							alt="Trophies"
+							class="winnerImg"
+						/>
+					</div>
+					<h2>Årets Nybyggare 2020 och 2021</h2>
+					<p>
+						Den 17 november avgjordes den nationella Sverige-finalen av Årets
+						Nybyggare där årets främsta företagare med utländsk bakgrund
+						utmärktes för deras enastående prestationer.
+					</p>
+					<a
+						href="https://www.almi.se/nyheter/nationella/arets-nybyggare-2021-och-2021/"
+						><button type="button">Läs mer</button></a
+					>
+				</article>
+			</div>
+		</section>
+		<section class="whyShould">
+			<article>
+				<h2>Därför ska du välja Almi</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Mauris
+					rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar.
+				</p>
+				<p>
+					Maecenas sed enim ut sem viverra aliquet eget sit amet. Scelerisque
+					eleifend donec pretium vulputate sapien nec sagittis. Nisl rhoncus
+					mattis rhoncus urna neque viverra justo.
+				</p>
+				<button type="button">Läs mer</button>
+			</article>
+			<img src="assets/images/person-1-round.png" alt="Person" />
+		</section>
+		<section class="end">
+			<img src="assets/images/salon.jpg" alt="salon" class="endImg" />
+			<div class="endText">
+				<span>Förverkliga din dröm och starta ditt eget företag</span>
+				<a href="https://etjanster.almi.se/oversikt/overview/345"
+					><button type="button">Ansök nu</button></a
+				>
+			</div>
+		</section>
 		<footer>
-			<div class="links"></div>
-			<div class="socials"></div>
+			<div class="linksSection">
+				<div class="links">
+					<div class="linkbox">
+						<h4>Våra tjänster</h4>
+						<ul class="linkList">
+							<li>
+								<a
+									href="https://www.almi.se/vara-tjanster/tjanster/affarsutveckling/"
+									>Affärsutveckling</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.almi.se/vara-tjanster/tjanster/lan-och-ovrig-finansiering/"
+									>Lån</a
+								>
+							</li>
+							<li>
+								<a href="https://www.almi.se/almi-invest/om-almi-invest/"
+									>Riskkapital</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="linkbox">
+						<h4>Kort om Almi</h4>
+						<ul class="linkList">
+							<li>
+								<a href="https://www.almi.se/om-almi/karriar/">Karriär</a>
+							</li>
+							<li>
+								<a
+									href="https://www.almi.se/om-almi/Fakta-om-oss/om-webbplatsen/"
+									>Om webbplatsen</a
+								>
+							</li>
+							<li>
+								<a
+									href="https://www.almi.se/om-almi/hallbarhet/hallbarhet-hos-almi/"
+									>Hållbarhet</a
+								>
+							</li>
+						</ul>
+					</div>
+
+					<div class="linkbox">
+						<h4>Kontakt</h4>
+						<ul class="linkList">
+							<li>
+								<a href="https://www.almi.se/om-almi/kontakt/">Kontakta oss</a>
+							</li>
+							<li>
+								<a href="https://www.almi.se/om-almi/kontakt/vara-radgivare/"
+									>Våra rådgivare</a
+								>
+							</li>
+							<li>
+								<a href="https://www.almi.se/almi-invest/team/">Almi Invest</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<img
+					src="assets/graphics/white-circle.svg"
+					alt="Graphic white"
+					class="gElement elementWhite"
+				/>
+			</div>
+			<div class="socials">
+				<a href="https://www.facebook.com/almiforetagspartner/"
+					><img
+						src="assets/icons/facebook.png"
+						alt="Facebook icon"
+						class="socialsIcons m-2"
+				/></a>
+				<a href="https://www.linkedin.com/company/almi-f-retagspartner/"
+					><img
+						src="assets/icons/linkedin.png"
+						alt="LinkedIn icon"
+						class="socialsIcons m-2"
+				/></a>
+				<a href="https://www.youtube.com/user/almiforetagspartner1"
+					><img
+						src="assets/icons/youtube.png"
+						alt="Youtube icon"
+						class="socialsIcons m-2"
+					/>
+				</a>
+			</div>
 		</footer>
 
 		<script src="script.js"></script>
-		<!-- Bootstrap JS -->
+		<!-- Loads hamburger icon for smaller screens -->
 		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+			src="https://kit.fontawesome.com/a1d9219911.js"
 			crossorigin="anonymous"
 		></script>
 	</body>
