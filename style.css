@@ -410,9 +410,6 @@ header img {
 	z-index: -1;
 }
 
-.articleImg {
-}
-
 .winnerImg,
 .teamImg {
 	object-fit: cover;

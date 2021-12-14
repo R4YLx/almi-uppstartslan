@@ -19,7 +19,7 @@ const toggleMenu = () => {
 };
 
 // click event for hamburger icon
-burgerBarsEl.addEventListener("click", (e) => {
+burgerBarsEl.addEventListener("click", () => {
 	toggleMenu();
 });
 
@@ -56,7 +56,7 @@ const slideshowItems = [
 	{
 		image: "assets/images/slide-3.jpg",
 		indicator: "assets/graphics/cake-3.svg",
-		caption: "3.Vi kontaktar dig",
+		caption: "3. Vi kontaktar dig",
 	},
 	{
 		image: "assets/images/slide-4.jpg",
@@ -65,24 +65,48 @@ const slideshowItems = [
 	},
 ];
 
-/*
-slideshowItems.forEach((slide) => {
-	slideboxEl.innerHTML = `<img
-		class="stepIndicator"
-		src="${slide.indicator}"
-		alt="indicator"
-	/>
-	<img
-		src="${slide.image}"
-		class="slideshowImg"
-	/>
-	<p class="carousel-caption">${slide.caption}</p>`;
-});
-*/
+// Isolating each property into new array
+const activeImage = slideshowItems.map((obj) => obj.image);
+const activeIndicator = slideshowItems.map((obj) => obj.indicator);
+const activeCaption = slideshowItems.map((obj) => obj.caption);
 
-const getSlide = () => {
-	// get object
-	// display object image
-	// display object indicator
-	// display object caption
+// giving property an index
+slideshowImgEl.src = activeImage[0];
+indicatorEl.src = activeIndicator[0];
+captionEl.innerText = activeCaption[0];
+
+let position = 0;
+
+// function for next slide
+const moveRight = () => {
+	if (position >= activeImage.length - 1) {
+		position = 0;
+		slideshowImgEl.src = activeImage[position];
+		indicatorEl.src = activeIndicator[position];
+		captionEl.innerText = activeCaption[position];
+		return;
+	}
+	slideshowImgEl.src = activeImage[position + 1];
+	indicatorEl.src = activeIndicator[position + 1];
+	captionEl.innerText = activeCaption[position + 1];
+	position++;
 };
+
+// function for previous slide
+const moveLeft = () => {
+	if (position < 1) {
+		position = activeImage.length - 1;
+		slideshowImgEl.src = activeImage[position];
+		indicatorEl.src = activeIndicator[position];
+		captionEl.innerText = activeCaption[position];
+		return;
+	}
+	slideshowImgEl.src = activeImage[position - 1];
+	indicatorEl.src = activeIndicator[position - 1];
+	captionEl.innerText = activeCaption[position - 1];
+	position--;
+};
+
+// click events for next and previous slide
+nextBtnEl.addEventListener("click", moveRight);
+prevBtnEl.addEventListener("click", moveLeft);
