@@ -1,6 +1,19 @@
+/*
+------- INDEX -------
+//
+1.Hamburger menu
+
+//
+2.Carousel / Slideshow
+
+//
+3. Light box in offer section
+
+*/
+
+///////////////////////
+// 1.Hamburger menu //
 /////////////////////
-// Hamburger menu //
-///////////////////
 
 const menuEl = document.querySelector("#menu");
 
@@ -28,9 +41,9 @@ menuItems.forEach((menuItem) => {
 	menuItem.addEventListener("click", toggleMenu);
 });
 
+/////////////////////////////
+// 2.Carousel / Slideshow //
 ///////////////////////////
-// Carousel / Slideshow //
-/////////////////////////
 
 const slideboxEl = document.querySelector(".slide");
 
@@ -110,3 +123,36 @@ const moveLeft = () => {
 // click events for next and previous slide
 nextBtnEl.addEventListener("click", moveRight);
 prevBtnEl.addEventListener("click", moveLeft);
+
+///////////////////////////////////
+// 3.Light box in offer section //
+/////////////////////////////////
+
+const lightboxEl = document.querySelector(".lightbox");
+const closeIconEl = document.querySelector(".closeIcon");
+
+const showLightbox = () => {
+	if (lightboxEl.style.display === "block") {
+		lightboxEl.style.display = "none";
+		lightboxEl.classList.remove("showLightbox");
+	} else {
+		lightboxEl.style.display = "block";
+		lightboxEl.classList.add("showLightbox");
+	}
+};
+
+// const infoSmall;
+// const infoMedium;
+// const infoLarge;
+
+// Click event for more info buttons
+const moreBtnEl = document.querySelectorAll(".moreBtn").forEach((btn) => {
+	btn.addEventListener("click", () => {
+		showLightbox();
+	});
+});
+
+// close icon for lightbox
+closeIconEl.addEventListener("click", () => {
+	showLightbox();
+});
