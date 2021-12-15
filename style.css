@@ -43,7 +43,7 @@
 h1,
 span {
 	font-size: 2rem;
-	font-weight: bold;
+	font-weight: 700;
 	color: var(--text-color-2);
 	text-shadow: 2px 2px 8px #000000;
 	margin: 0;
@@ -56,7 +56,7 @@ span {
 h2 {
 	color: var(--primary-color);
 	font-size: 1.5rem;
-	font-weight: bold;
+	font-weight: 700;
 }
 
 .heroList,
@@ -69,17 +69,19 @@ h2 {
 	color: var(--text-color-2);
 	text-shadow: 2px 2px 4px #000000;
 	list-style: inside;
+	font-weight: 400;
 }
 
 /* Styling of buttons can be found under 4.Buttons */
 button {
-	font-weight: 600;
+	font-weight: 400;
 	font-size: 1.25rem;
 	text-align: center;
 }
 
 p {
 	font-size: 1.125rem;
+	font-weight: 400;
 }
 
 .article-container p {
@@ -90,7 +92,7 @@ p {
 .carousel-caption {
 	color: var(--primary-color);
 	font-size: 1.1rem;
-	font-weight: bold;
+	font-weight: 700;
 	text-align: center;
 }
 
@@ -101,7 +103,7 @@ p {
 h3 {
 	color: var(--primary-bg-color);
 	text-transform: uppercase;
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 1.75rem;
 	margin: 1rem;
 }
@@ -111,7 +113,7 @@ h3 {
 .interest {
 	color: var(--primary-bg-color);
 	font-size: 1.4rem;
-	font-weight: bold;
+	font-weight: 400;
 	margin: 10px;
 }
 
@@ -136,7 +138,7 @@ span {
 h4 {
 	color: var(--text-color-2);
 	font-size: 1.5rem;
-	font-weight: 600;
+	font-weight: 700;
 	margin: 0;
 }
 
@@ -234,6 +236,7 @@ header {
 
 .end {
 	position: relative;
+	height: 40vh;
 }
 
 .linksSection {
@@ -332,10 +335,10 @@ nav a {
 	border-radius: 3px 0 0 3px;
 }
 
-.prevBtn:hover,
+/* .prevBtn:hover,
 .nextBtn:hover {
 	background-color: rgba(0, 0, 0, 0.644);
-}
+} */
 
 /*/ //////////////////
 //  3.3.Lightbox   //
@@ -379,6 +382,21 @@ nav a {
 	color: var(--primary-color);
 }
 
+.loanDesc {
+	padding: 0vw 10vw 0vw 10vw;
+	font-size: 1rem;
+	text-align: left;
+}
+
+.highlight {
+	font-size: 1rem;
+	font-weight: 400;
+	color: var(--primary-bg-color);
+	text-shadow: none;
+	text-align: left;
+	display: inline;
+}
+
 /*/ ///////////////
 //  4.Buttons   //
 ///////////////*/
@@ -410,8 +428,8 @@ header img {
 .heroImg,
 .endImg {
 	object-fit: cover;
-	max-height: 50vh;
 	filter: brightness(60%);
+	height: 40vh;
 }
 
 .slideshow img {
