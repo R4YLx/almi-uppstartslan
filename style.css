@@ -478,11 +478,19 @@ header img {
 
 @media screen and (min-width: 720px) {
 	/* Header */
+
+	/* Hero section */
 	.heroImg {
 		max-height: 25vh;
 	}
 
-	/* start section */
+	.heroTextbox {
+		top: 55%;
+		left: 50%;
+		transform: translate(-50%, -55%);
+	}
+
+	/* How to section */
 	.start {
 		padding: 5ch;
 	}
@@ -509,14 +517,13 @@ header img {
 	.offerBoxes {
 		display: flex;
 		justify-content: space-evenly;
-		margin: 4ch;
+		margin: 4ch 4ch 0ch 4ch;
 	}
 
 	.offerbox {
 		margin: 2ch 1ch 5ch 1ch;
 		padding: 1ch;
 		box-sizing: border-box;
-		gap: 10px;
 	}
 
 	.lightboxInfo {
@@ -597,4 +604,98 @@ header img {
 /////////////////////*/
 
 @media screen and (min-width: 1025px) {
+	/* header section */
+	header {
+		position: relative;
+		flex-direction: row-reverse;
+		justify-content: flex-end;
+	}
+
+	header > * {
+		margin: 0vw 15vw 0vw 5vw;
+	}
+
+	.burgerBars {
+		display: none !important;
+	}
+
+	#menu {
+		display: flex !important;
+		justify-content: space-around !important;
+		position: relative;
+		padding-top: 0rem;
+		order: 2 !important;
+		padding: 1vh;
+	}
+
+	#menu > * {
+		margin: 0vw 2vw 0vw 2vw;
+	}
+
+	/* hero section */
+	.heroImg {
+		max-height: 40vh;
+	}
+
+	/* How to section*/
+	.start {
+		padding: 4vw 20vw 4vw 20vw;
+	}
+
+	/* offers section */
+	.offerBoxes {
+		margin: 0vw 18vw 0vw 18vw;
+	}
+
+	.offerbox {
+		margin: 2ch 4ch 10ch 4ch;
+		padding: 2vw;
+		height: 40vh;
+	}
+
+	.lightboxInfo {
+		width: 70vh;
+		height: 60%;
+	}
+
+	/* social proof section */
+	.socialProof {
+		padding: 4vw 19vw 4vw 19vw;
+	}
+
+	.elementOrange {
+		max-width: 40%;
+	}
+
+	/* Why you should section */
+	.whyShould {
+		padding: 4vw 20vw 4vw 20vw;
+	}
+
+	.article-container article > * {
+		padding: 2ch;
+	}
+
+	/* end section */
+	.end {
+		max-height: 40vh;
+	}
+
+	.endImg {
+		max-height: 40vh;
+	}
+
+	/* link section */
+
+	.linksSection {
+		padding: 2vw 10vw 2vw 10vw;
+	}
+
+	.elementWhite {
+		max-width: 13%;
+	}
+
+	.socials > * {
+		margin: 0vw 2vw 0vw 2vw;
+	}
 }
