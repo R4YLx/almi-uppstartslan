@@ -165,7 +165,7 @@ h4 {
 ///////////////*/
 
 * {
-	box-sizing: border-box;
+	box-sizing: border-box !important;
 }
 
 body {
@@ -356,7 +356,6 @@ nav a {
 	display: block;
 }
 
-/* Lightbox ruta med text och New Game -knapp */
 .lightboxInfo {
 	background-color: white;
 	width: 40vh;
@@ -365,6 +364,10 @@ nav a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+.lightboxInfo h3 {
+	margin-top: 4ch;
 }
 
 .closeIcon {
@@ -463,4 +466,135 @@ header img {
 .socialsIcons {
 	max-width: 60px;
 	padding: 10px;
+}
+
+/*/ ////////////////////
+//  4.Media Queries  //
+////////////////////*/
+
+/*/ ///////////////////////
+//  4.1.Medium Screens  //
+///////////////////////*/
+
+@media screen and (min-width: 720px) {
+	/* Header */
+	.heroImg {
+		max-height: 25vh;
+	}
+
+	/* start section */
+	.start {
+		padding: 5ch;
+	}
+
+	.nextBtn,
+	.prevBtn {
+		margin-top: -5%;
+	}
+
+	.carousel-caption {
+		top: 80%;
+	}
+
+	/* Offer section */
+
+	.offerTitle {
+		padding-top: 2ch;
+	}
+
+	.offers {
+		padding: 0ch;
+	}
+
+	.offerBoxes {
+		display: flex;
+		justify-content: space-evenly;
+		margin: 4ch;
+	}
+
+	.offerbox {
+		margin: 2ch 1ch 5ch 1ch;
+		padding: 1ch;
+		box-sizing: border-box;
+		gap: 10px;
+	}
+
+	.lightboxInfo {
+		width: 50vh;
+		height: 40%;
+	}
+
+	/* Social proof section */
+
+	.elementOrange {
+		max-width: 55%;
+	}
+
+	.socialProof {
+		padding: 2ch;
+	}
+
+	.article-container article {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	.article-container article:nth-child(odd) {
+		flex-direction: row-reverse;
+	}
+
+	.article-container article > * {
+		padding: 3ch;
+	}
+
+	.articleImg {
+		max-width: 50%;
+	}
+
+	/* Why you should choose section */
+	.whyShould {
+		padding: 5ch;
+		display: flex;
+		align-items: center;
+	}
+
+	.whyShould img {
+		max-width: 50%;
+	}
+
+	/* end section */
+	.end {
+		max-height: 25vh;
+	}
+
+	.endImg {
+		max-height: 25vh;
+	}
+
+	.endText {
+		padding: 5ch;
+	}
+
+	/* link section */
+
+	.linksSection {
+		padding: 2ch 5ch 2ch 5ch;
+	}
+
+	.links {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.elementWhite {
+		max-width: 15%;
+	}
+}
+
+/*/ /////////////////////
+//  4.2.Large Screens //
+/////////////////////*/
+
+@media screen and (min-width: 1025px) {
 }
