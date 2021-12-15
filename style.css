@@ -32,7 +32,7 @@
 	--text-color-2: #ffff;
 }
 
-/*/ //////////////////
+/*/ /////////////////
 //  2.Typography  //
 /////////////////*/
 
@@ -161,7 +161,7 @@ h4 {
 }
 
 /*/////////////////
-//  3.Layout    //
+//	3.Layout	//
 ///////////////*/
 
 * {
@@ -335,11 +335,6 @@ nav a {
 	border-radius: 3px 0 0 3px;
 }
 
-/* .prevBtn:hover,
-.nextBtn:hover {
-	background-color: rgba(0, 0, 0, 0.644);
-} */
-
 /*/ //////////////////
 //  3.3.Lightbox   //
 //////////////////*/
@@ -364,8 +359,8 @@ nav a {
 /* Lightbox ruta med text och New Game -knapp */
 .lightboxInfo {
 	background-color: white;
-	width: 50vh;
-	height: 80vh;
+	width: 40vh;
+	height: 55vh;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -383,7 +378,7 @@ nav a {
 }
 
 .loanDesc {
-	padding: 0vw 10vw 0vw 10vw;
+	padding: 0vw 5vw 0vw 5vw;
 	font-size: 1rem;
 	text-align: left;
 }

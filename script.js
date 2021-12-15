@@ -141,19 +141,6 @@ const showLightbox = () => {
 	}
 };
 
-// const infoSmall;
-// const infoMedium;
-// const infoLarge;
-
-/*
-// Click event for more info buttons
-const moreBtnEl = document.querySelectorAll(".moreBtn").forEach((btn) => {
-	btn.addEventListener("click", () => {
-		showLightbox();
-	});
-});
-*/
-
 const moreBtnSEl = document.querySelector(".moreBtnS");
 const moreBtnMEl = document.querySelector(".moreBtnM");
 const moreBtnLEl = document.querySelector(".moreBtnL");
@@ -165,21 +152,21 @@ moreBtnSEl.addEventListener("click", () => {
 	moreInfoTextEl.innerHTML = `
 	
 		<h3>Small</h3>
-		<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">10 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque <span class="highlight">3 mån</span> diam volutpat commodo. Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
+		<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">10 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> <p class="loanDesc"> Odio pellentesque <span class="highlight">3 mån</span> diam volutpat commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <p class="loanDesc">Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
 });
 
 // click event for offer Medium
 moreBtnMEl.addEventListener("click", () => {
 	showLightbox();
 	moreInfoTextEl.innerHTML = `<h3>Medium</h3>
-	<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">25 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque <span class="highlight">6 mån</span> diam volutpat commodo. Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
+	<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">25 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> <p class="loanDesc"> Odio pellentesque <span class="highlight">6 mån</span> diam volutpat commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <p class="loanDesc">Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
 });
 
 // click event for offer Large
 moreBtnLEl.addEventListener("click", () => {
 	showLightbox();
 	moreInfoTextEl.innerHTML = `<h3>Large</h3>
-	<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">50 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio pellentesque <span class="highlight">12 mån</span> diam volutpat commodo. Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
+	<p class="loanDesc">Lorem ipsum dolor sit amet, consectetur <span class="highlight">50 000 SEK</span> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> <p class="loanDesc"> Odio pellentesque <span class="highlight">12 mån</span> diam volutpat commodo. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> <p class="loanDesc">Tempus quam <span class="highlight">5% fast ränta</span> pellentesque nec nam aliquam sem et. Pulvinar elementum integer enim neque volutpat ac. Ut <span class="highlight">amortering på en fast avgift av 500 SEK i månaden </span> venenatis tellus in metus vulputate.</p>`;
 });
 
 // close icon for lightbox
