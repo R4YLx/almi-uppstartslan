@@ -505,7 +505,7 @@ header img {
 
 	/* How to section */
 	.start {
-		padding: 5ch;
+		padding: 2ch 5ch 5ch 5ch;
 	}
 
 	.nextBtn,
@@ -532,11 +532,11 @@ header img {
 	.offerBoxes {
 		display: flex;
 		justify-content: space-evenly;
-		margin: 4ch 4ch 0ch 4ch;
+		margin: 0ch 4ch 0ch 4ch;
 	}
 
 	.offerbox {
-		margin: 2ch 1ch 5ch 1ch;
+		margin: 2ch 1ch 6ch 1ch;
 		padding: 1ch;
 		box-sizing: border-box;
 	}
@@ -631,7 +631,7 @@ header img {
 	}
 
 	header > * {
-		margin: 0vw 15vw 0vw 5vw;
+		margin: 0vw 5vw 0vw 5vw;
 	}
 
 	header img {
@@ -662,7 +662,7 @@ header img {
 
 	/* How to section*/
 	.start {
-		padding: 4vw 20vw 4vw 20vw;
+		padding: 3vw 20vw 4vw 20vw;
 	}
 
 	.nextBtn,
@@ -677,7 +677,7 @@ header img {
 	}
 
 	.offerbox {
-		margin: 2ch 4ch 10ch 4ch;
+		margin: 2ch 4ch 8ch 4ch;
 		padding: 2vw;
 		height: 40vh;
 	}
@@ -689,7 +689,7 @@ header img {
 
 	/* social proof section */
 	.socialProof {
-		padding: 4vw 19vw 4vw 19vw;
+		padding: 3vw 19vw 3vw 19vw;
 	}
 
 	.elementOrange {
@@ -698,7 +698,7 @@ header img {
 
 	/* Why you should section */
 	.whyShould {
-		padding: 4vw 20vw 4vw 20vw;
+		padding: 3vw 20vw 3vw 20vw;
 	}
 
 	.article-container article > * {
