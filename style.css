@@ -459,6 +459,11 @@ header img {
 	max-width: 35vw;
 }
 
+.chevron {
+	font-size: 0.8rem;
+	padding: 0.5ch;
+}
+
 .socials {
 	text-align: center;
 }
@@ -479,6 +484,14 @@ header img {
 @media screen and (min-width: 720px) {
 	/* Header */
 
+	header img {
+		max-width: 120px;
+	}
+
+	.burgerBars {
+		padding: 20px;
+	}
+
 	/* Hero section */
 	.heroImg {
 		max-height: 25vh;
@@ -497,7 +510,9 @@ header img {
 
 	.nextBtn,
 	.prevBtn {
-		margin-top: -5%;
+		margin-top: -10%;
+		font-size: 4rem;
+		padding: 4vw;
 	}
 
 	.carousel-caption {
@@ -597,6 +612,10 @@ header img {
 	.elementWhite {
 		max-width: 15%;
 	}
+
+	.socials > * {
+		margin: 0vw 2vw 0vw 2vw;
+	}
 }
 
 /*/ /////////////////////
@@ -613,6 +632,10 @@ header img {
 
 	header > * {
 		margin: 0vw 15vw 0vw 5vw;
+	}
+
+	header img {
+		max-width: 150px;
 	}
 
 	.burgerBars {
@@ -640,6 +663,12 @@ header img {
 	/* How to section*/
 	.start {
 		padding: 4vw 20vw 4vw 20vw;
+	}
+
+	.nextBtn,
+	.prevBtn {
+		font-size: 8rem;
+		padding: 2vw;
 	}
 
 	/* offers section */
@@ -693,9 +722,5 @@ header img {
 
 	.elementWhite {
 		max-width: 13%;
-	}
-
-	.socials > * {
-		margin: 0vw 2vw 0vw 2vw;
 	}
 }
