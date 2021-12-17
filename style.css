@@ -165,6 +165,11 @@ h3 {
 	padding: 0ch 4ch 0ch 4ch;
 }
 
+.name {
+	font-style: normal !important;
+	font-weight: 700;
+}
+
 .end {
 	text-align: center;
 }
@@ -193,6 +198,10 @@ h4 {
 	text-decoration: none;
 	color: var(--clr-text-alternative);
 	font-weight: 400;
+}
+
+.linkbox a:hover {
+	color: var(--clr-secondary-bg);
 }
 
 /*/////////////////
@@ -251,7 +260,7 @@ header {
 .offerbox {
 	background-color: var(--clr-text-alternative);
 	border-radius: 10px;
-	box-shadow: 5px 5px 5px rgb(110, 110, 110);
+	box-shadow: 0px 5px 10px rgb(110, 110, 110);
 	margin: 10vw 0vw 10vw 0vw;
 	padding: 5vw;
 }
@@ -460,10 +469,19 @@ button,
 	border: none;
 	text-decoration: none;
 	display: inline-block;
-	padding: 5px 15px 5px 15px;
+	padding: 10px 25px 10px 25px;
 	margin-top: 2vh;
 	margin-bottom: 2vh;
 	cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+	color: var(--clr-primary-bg);
+}
+
+.endText .btn {
+	margin-top: 5vh;
 }
 
 /*/ //////////////////////
@@ -744,7 +762,7 @@ header img {
 	.nextBtn,
 	.prevBtn {
 		margin-top: -12%;
-		font-size: 8rem;
+		font-size: 6rem;
 		padding: 2vw;
 	}
 
