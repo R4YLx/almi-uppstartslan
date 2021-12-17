@@ -158,6 +158,13 @@ h3 {
 	color: var(--clr-text-alternative);
 }
 
+.img-container p {
+	font-style: oblique;
+	margin: 0ch 0ch 1ch 0ch;
+	text-align: center;
+	padding: 0ch 4ch 0ch 4ch;
+}
+
 .end {
 	text-align: center;
 }
@@ -630,8 +637,13 @@ header img {
 		align-items: center;
 	}
 
-	.whyShould img {
+	.whyShould article {
 		max-width: 50%;
+	}
+
+	.img-container {
+		max-width: 50%;
+		padding: 2ch;
 	}
 
 	/* end section */
@@ -707,6 +719,10 @@ header img {
 
 	#menu > * {
 		margin: 0vw 1vw 0vw 1vw;
+	}
+
+	#menu a:hover {
+		color: var(--clr-accent);
 	}
 
 	/* hero section */
