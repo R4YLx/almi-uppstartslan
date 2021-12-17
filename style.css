@@ -711,7 +711,13 @@ header img {
 
 	/* hero section */
 	.heroImg {
-		max-height: 40vh;
+		max-height: 45vh;
+	}
+
+	.heroTextbox {
+		top: 60%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	/* How to section*/
