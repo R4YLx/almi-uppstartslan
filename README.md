@@ -1,4 +1,10 @@
 # almi-uppstartslan
+Designed a one pager using raster graphics editor, vector graphics editor and prototyping tool.
+#### Languages used:
+- HTML
+- CSS
+- Vanilla JavaScript
+
 
 ## Table of contents
 * [Assignment](#assignment)
