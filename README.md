@@ -1,6 +1,6 @@
 # almi-uppstartslan
 Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using raster graphics editor, vector graphics editor and prototyping tool.
-#### Languages used:
+### Languages used:
 - HTML
 - CSS
 - Vanilla JavaScript
@@ -18,7 +18,7 @@ Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using rast
 - The made-up service should include three different loan alternatives with different terms.
 - Apply the concept of sales funnel on the webpage to visualize the customer journey.
 
-##### The webpage must include:
+#### The webpage must include:
 - elements of interactions
 - Mobile First Design
 - at least 3 graphic elements made from scratch
@@ -26,7 +26,7 @@ Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using rast
 - at least 1 cut out person 
 - edited photography
 
-#### Time limit
+### Time limit
 - 3 weeks
 
 ## Tools
