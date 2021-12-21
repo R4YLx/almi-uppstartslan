@@ -26,7 +26,7 @@ Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using rast
 - at least 1 cut out person 
 - edited photography
 
-### Time limit
+#### Time limit
 - 3 weeks
 
 ## Tools
