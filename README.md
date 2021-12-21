@@ -38,6 +38,6 @@ Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using rast
 ## Wireframes
 
 <div>
-<img src="https://github.com/R4YLx/almi-uppstartslan/blob/main/assets/images/almi-wireframe-mobile.png" width=15% height=15% style="display: inline;">
-<img src="https://github.com/R4YLx/almi-uppstartslan/blob/main/assets/images/almi-wireframe-web.png" width=63% height=63% style="display: inline;">
+<img src="https://github.com/R4YLx/almi-uppstartslan/blob/main/assets/images/almi-wireframe-mobile.png" width=15% style="display: inline;">
+<img src="https://github.com/R4YLx/almi-uppstartslan/blob/main/assets/images/almi-wireframe-web.png" width=63% style="display: inline;">
 </div>
