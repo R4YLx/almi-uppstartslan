@@ -13,8 +13,8 @@ Designed a [one pager](https://uppstartslan-raymond-lam.netlify.app/) using rast
 
 ## Assignment
 
-- create a design for a made-up service called "Uppstartslån" for Almi with their [graphic profile](https://www.almi.se/om-almi/press/grafisk-profil/).
-- starting from wireframe to a functional webpage.
+- Create a design for a made-up service called "Uppstartslån" for Almi with their [graphic profile](https://www.almi.se/om-almi/press/grafisk-profil/).
+- Start with creating a wireframe and then make a functional webpage.
 - The made-up service should include three different loan alternatives with different terms.
 - Apply the concept of sales funnel on the webpage to visualize the customer journey.
 
